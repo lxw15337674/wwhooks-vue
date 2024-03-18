@@ -1,0 +1,50 @@
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+
+# production
+
+/.history
+/.yarn
+/dist
+/docs-dist
+docs-dist
+# misc
+.DS_Store
+
+# umi
+.env.local
+.dumi/tmp
+.dumi/tmp-production
+.DS_Store
+
+# ide
+/.vscode
+/.idea
+node_modules
+**/node_modules
+**/docs-dist/
+**/dist/
+**/.dumi
+**/tmp
+docs-dist
+packages/wwhooks/docs-dist/umi.server.js
+/dist
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
+.DS_Store
+.turbo
+build/**
+dist/**
+.next/**
+
+
+node_modules
+dist
+.DS_Store
+.cache
+.temp
+cache
+coverage

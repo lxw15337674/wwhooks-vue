@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "element-plus/global",
+      "node"
+    ]
+  },
+    "exclude": [
+      "node_modules",
+      "commitlint.config.js"
+    ]
+}
