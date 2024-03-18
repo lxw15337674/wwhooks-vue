@@ -1,2 +1,3 @@
 import useState from "./State/useState";
-export { useState };
+import useSelections from "./State/useSelections";
+export { useState ,useSelections};
