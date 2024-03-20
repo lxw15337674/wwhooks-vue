@@ -5,7 +5,6 @@
 
 ## 代码演示
 <demo src="./demo/demo.vue" title="标题" desc="描述"></demo>
-<demo src="./demo/demo2.vue" title="标题" desc="描述"></demo>
 
 
 ## API

@@ -7,13 +7,14 @@
     "jsx": "react",
     "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
     "types": [
       "element-plus/global",
       "node"
     ]
   },
-    "exclude": [
-      "node_modules",
-      "commitlint.config.js"
-    ]
+  "exclude": [
+    "node_modules",
+    "commitlint.config.js"
+  ]
 }

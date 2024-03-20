@@ -24,6 +24,7 @@
   "devDependencies": {
     "@ruabick/md-demo-plugins": "^0.3.3",
     "@ruabick/vitepress-demo-block": "^0.3.3",
+    "@types/lodash-es": "^4.17.12",
     "@typescript-eslint/eslint-plugin": "^5.34.0",
     "@typescript-eslint/parser": "^5.34.0",
     "autoprefixer": "^10.4.8",
@@ -35,11 +36,15 @@
     "markdown-it-vuese": "^0.4.0",
     "prettier": "^2.7.1",
     "vite-plugin-vitepress-demo": "^2.2.1",
+    "vite-plugin-vue-devtools": "^7.0.18",
     "vitepress-theme-demoblock": "^3.0.3"
   },
   "config": {
     "commitizen": {
       "path": "git-cz"
     }
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21"
   }
 }
