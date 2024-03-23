@@ -1,18 +1,31 @@
 {
   "name": "wwwcomponents-vue",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./ui/lib/index.js",
-  "module": "./ui/es/index.js",
   "scripts": {
+    "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21"
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.2.25",
+    "@storybook/addon-essentials": "^8.0.4",
+    "@storybook/addon-interactions": "^8.0.4",
+    "@storybook/addon-links": "^8.0.4",
+    "@storybook/blocks": "^8.0.4",
+    "@storybook/test": "^8.0.4",
+    "@storybook/vue3": "^8.0.4",
+    "@storybook/vue3-vite": "^8.0.4",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "storybook": "^8.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
   }
 }

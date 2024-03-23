@@ -2,8 +2,8 @@
   "name": "monorepo",
   "version": "1.0.0",
   "scripts": {
-    "components:dev": "pnpm --filter wwwcomponents-vue docs:dev",
-    "components:debug": "pnpm --filter wwwcomponents-vue debug",
+    "components:dev": "pnpm --filter wwwcomponents-vue storybook",
+    "components:build": "pnpm --filter wwwcomponents-vue build-storybook",
     "hooks:dev": "pnpm --filter wwhooks-vue docs:dev",
     "hooks:debug": "pnpm --filter wwhooks-vue debug"
   },
