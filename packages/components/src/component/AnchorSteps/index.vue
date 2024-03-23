@@ -4,10 +4,12 @@
                    :container="containerRef"
                    class="anchor"
                    @click="handleClick"
+                   :marker="false"
                    direction="horizontal">
             <el-anchor-link v-for="step in props.steps"
-                            :href="'#' + step.key"
-                            :title="step.title" />
+                            :href="'#' + step.key">
+                {{step.title}}
+            </el-anchor-link>
         </el-anchor>
         <div ref="containerRef"
              class="steps">
@@ -15,7 +17,7 @@
                 <el-step v-for="step in props.steps"
                          :title="step.title">
                     <template #title>
-                        <div :id="step.key" >
+                        <div :id="step.key">
                             <slot :step="step">
                             </slot>
                         </div>
@@ -29,7 +31,7 @@
 <script lang="ts"
         setup>
         import { ref } from 'vue';
-        import {  AnchorStepProps } from './interface';
+        import { AnchorStepProps } from './interface';
         const props = withDefaults(defineProps<AnchorStepProps>(), {
             steps: () => []
         });
@@ -46,6 +48,7 @@
         flex-direction: column;
         overflow: auto;
         height: 100%;
+
         .steps {
             flex: 1;
             overflow: auto
