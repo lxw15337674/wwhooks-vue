@@ -7,10 +7,10 @@ hero:
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
-    - theme: component
-    - text: component
-      link: /component/
- 
+    - theme: hooks
+    - text: hooks
+      link: /hooks/
+
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit

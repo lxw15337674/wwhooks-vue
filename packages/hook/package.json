@@ -1,5 +1,5 @@
 {
-  "name": "wwwcomponents-vue",
+  "name": "wwhooks-vue",
   "private": false,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,8 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "dependencies": {
-    "lodash-es": "^4.17.21"
+  "devDependencies": {
+    "element-plus": "^2.6.2"
   }
+ 
 }
