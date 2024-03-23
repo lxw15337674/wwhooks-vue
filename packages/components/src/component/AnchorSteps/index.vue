@@ -15,8 +15,7 @@
                 <el-step v-for="step in props.steps"
                          :title="step.title">
                     <template #title>
-                        <div :id="step.key"
-                             style="height:500px">
+                        <div :id="step.key" >
                             <slot :step="step">
                             </slot>
                         </div>

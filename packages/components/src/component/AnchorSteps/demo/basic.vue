@@ -21,7 +21,9 @@
 <template>
     <div style='height:200px'>
         <AnchorSteps :steps="steps" >
-            123123
+            <template v-slot="slotProps">
+                <div>{{slotProps}}</div>
+            </template>
         </AnchorSteps>
     </div>
 </template>
