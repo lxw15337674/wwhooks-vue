@@ -1,18 +1,18 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "paths": {
       "@": [
-        "src"
+        "./src"
       ],
       "@/*": [
-        "src/*",
+        "./src/*",
         "*"
+      ],
+      "www-components-vue": [
+        "./src/index.ts"
       ]
     },
-    "types": [
-      "element-plus/global"
-    ],
-   
   },
 }

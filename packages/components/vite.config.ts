@@ -9,11 +9,6 @@ import VueDevTools from 'vite-plugin-vue-devtools'
 export default defineConfig({
   plugins: [vue(), VitePluginVitepressDemo(), VueDevTools()],
   base: './',
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
   build: {
     target: 'modules',
     //打包文件目录

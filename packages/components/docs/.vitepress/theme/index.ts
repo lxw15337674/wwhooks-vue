@@ -8,6 +8,6 @@ export default {
   ...DefaultTheme,
   enhanceApp({ app, router, siteData }) {
     app.component('demo', DemoBlock);
-    app.use(ElementPlus)
+    app.use(ElementPlus);
   },
 };

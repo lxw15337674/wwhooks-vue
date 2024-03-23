@@ -2,8 +2,8 @@
   "name": "monorepo",
   "version": "1.0.0",
   "scripts": {
-    "components:dev": "pnpm --filter wwwcomponents-vue docs:dev",
-    "components:debug": "pnpm --filter wwwcomponents-vue debug",
+    "components:dev": "pnpm --filter www-components-vue docs:dev",
+    "components:debug": "pnpm --filter www-components-vue debug",
     "hooks:dev": "pnpm --filter wwhooks-vue docs:dev",
     "hooks:debug": "pnpm --filter wwhooks-vue debug"
   },
@@ -37,8 +37,8 @@
     "gh-pages": "^4.0.0",
     "git-cz": "^4.9.0",
     "lint-staged": "^13.3.0",
-    "markdown-it-vuese": "^0.4.0",
     "prettier": "^2.8.8",
+    "sass": "^1.72.0",
     "typescript": "^5.4.3",
     "vite": "^5.2.3",
     "vite-plugin-vitepress-auto-sidebar": "^1.6.3",

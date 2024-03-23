@@ -1,7 +1,10 @@
 import { defineConfig } from 'vitepress';
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 import { applyPlugins } from '@ruabick/md-demo-plugins';
-import vuese from 'markdown-it-vuese';
+import { resolve } from 'path'
+
+// 輸出
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'My Awesome Project',
@@ -10,7 +13,6 @@ export default defineConfig({
   markdown: {
     config: (md) => {
       applyPlugins(md);
-      md.use(vuese);
     },
   },
   vite: {
@@ -29,6 +31,12 @@ export default defineConfig({
         },
       }),
     ],
+    resolve: {
+      alias: {
+        'src': resolve('./src'),
+        'www-components-vue': resolve('./src'),
+      },
+    },
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

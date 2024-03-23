@@ -1,10 +1,10 @@
 <script setup
         lang="ts">
-    import Button from '../index.vue'
+        import { Button } from 'www-components-vue'
 </script>
 
 <template>
   <div>
-    <Button/>
+    <Button />
   </div>
 </template>
